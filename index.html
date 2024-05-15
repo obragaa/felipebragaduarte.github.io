@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Braga - Portfólio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Felipe Braga</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="mp4/video-bg.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="hero-content">
+            <h1>Felipe Braga</h1>
+            <p>Desenvolvedor Full-Stack e Entusiasta de IA</p>
+            <a href="#projects" class="btn">Veja meus projetos</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Eu sou um desenvolvedor Full-Stack apaixonado por tecnologia e sempre em busca de aprender coisas novas!</p>
+    </section>
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="project-card">
+            <img src="img/project1.jpg" alt="Project 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1.</p>
+        </div>
+        <div class="project-card">
+            <img src="img/project2.jpg" alt="Project 2">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+        </div>
+        <!-- Adicione mais projetos conforme necessário -->
+    </section>
+    <section id="contact">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/your-email" method="POST">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="_replyto" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Felipe Braga. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
