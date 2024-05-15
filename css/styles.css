@@ -50,6 +50,22 @@ nav {
     margin: 5px;
 }
 
+#about {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#about h2 {
+    width: 100%;
+}
+
+#about p {
+    padding: 2rem 0;
+    text-align: center;
+    width: 50%;
+}
+
 #hero {
     position: relative;
     height: 100vh;
@@ -92,7 +108,7 @@ nav {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -100,6 +116,13 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+#projects h2 {
+    width: 100%;
+    padding: 2rem 0;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .project-card {
@@ -110,11 +133,22 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .project-card img {
     width: 100%;
     border-radius: 10px;
+}
+
+.project-card a {
+    color: inherit;
+    text-decoration: none;
 }
 
 footer {
