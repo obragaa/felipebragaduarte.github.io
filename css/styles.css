@@ -223,6 +223,69 @@ form button {
 }
 
 /* Árvore dos conhecimentos */
+#knowledge-tree {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#knowledge-tree h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.knowledge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.knowledge-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: left;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.knowledge-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.knowledge-card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.knowledge-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.knowledge-card ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.knowledge-card ul ul {
+    padding-left: 1rem;
+}
+
+.knowledge-card li {
+    margin-bottom: 0.5rem;
+}
+
+#subtittle-tree {
+    font-weight: bold;
+}
+
+/* TimeLine */
 #timeline {
     padding: 2rem 0;
     text-align: center;
