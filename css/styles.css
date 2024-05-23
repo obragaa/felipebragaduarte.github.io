@@ -342,7 +342,7 @@ form button {
     z-index: 1;
 }
 
-.timeline-item:nth-child(even)::after {
+.timeline-item:nth-child(even::after) {
     left: -17px;
 }
 
@@ -397,4 +397,117 @@ form button {
         left: -120px;
         right: auto;
     }
+}
+
+/* Modal */
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+#open-memory-game {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remover borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: block; /* Exibir como bloco */
+    margin: 20px auto; /* Centralizar o botão */
+}
+
+#open-memory-game:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-3px); /* Leve elevação ao passar o mouse */
+}
+
+#open-memory-game:active {
+    background-color: #111; /* Cor de fundo ao clicar */
+    transform: translateY(1px); /* Leve descida ao clicar */
+}
+
+
+.memory-game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.memory-card {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.memory-card img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.memory-card .front-face {
+    transform: rotateY(180deg);
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.memory-card.flip .front-face {
+    transform: rotateY(0deg);
+}
+
+.memory-card.flip .back-face {
+    transform: rotateY(180deg);
+}
+
+.congratulations-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: green;
 }
